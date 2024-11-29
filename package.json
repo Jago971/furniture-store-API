@@ -1,0 +1,19 @@
+{
+  "name": "furniture-store-backend",
+  "version": "1.0.0",
+  "description": "backend api",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "mm",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "promise-mysql": "^5.2.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

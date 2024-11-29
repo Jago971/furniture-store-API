@@ -54,4 +54,9 @@ describe('currency conversion tests', () => {
         const actual = () => {currencyConverter({price: 100}, 123)}
         expect( actual ).toThrow(TypeError)
     })
+
+    test('negative price', () => {
+        const actual = () => {currencyConverter({price: -100}, 'GBP')}
+        expect( actual ).toThrow(Error)
+    })
 })

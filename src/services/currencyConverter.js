@@ -1,4 +1,7 @@
 function currencyConverter (product, currency = "GBP") {
+    if(product.price < 0) {
+        throw new Error('Negative price not possible!')
+    }
     currency = currency.toUpperCase();
 
     const currencies = {
